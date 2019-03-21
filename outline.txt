@@ -1,0 +1,65 @@
+Start of the project
+
+Introduction:
+
+The Data:
+  Find informations on keggle
+
+Workflow
+  Training Set + Test Set
+    from the kaggle competition
+    https://www.kaggle.com/c/house-prices-advanced-regression-techniques
+  Had some numerical but also a few categorical values
+
+  How much data do we have available?
+    14000 rows, 8 rows
+
+  Is it normal or not?
+    Not normal.
+    [Insert images here, they are on the notebook server]
+
+  Correlation Matrix
+    What variables ahve the biggest correlation with the sale price?
+
+  Integrate train + test set
+    |Work on the missing values, then distinquish again
+    |
+    |Had a lot of missing values
+    |  dropped columns with 30% or more missing values,
+    |  Because we dont want to add things that dont represent reality
+    |    Remove Columns, not rows!
+    |
+    |  Filled the rest in with the mean or median or the column
+    |
+    |Look at outlier
+    |  Remove everything beyond 0.05 percentile and 0.95 percentile,
+    |    for all columns
+    |
+    |Sales data is not normally distributed, so we took the logarithm
+    |  [add some sources, why does this work?]
+    |
+    |Use dummy variables for categorical features
+    |  [how does that work?]
+    |  One-hot-coding, function in pandas
+
+What do we try to archive
+  Predict the sale price
+
+Collaborating on a ipython notebook server
+  [how was that?]
+
+Lasso regression:
+  [resources]
+  Really simple
+  result: low score
+
+  loss function: Root Mean Square Error
+
+Gradient Boosting Regressor:
+  [resources]
+  Because results were low
+
+  loss function: Root Mean Square Error
+
+Conclusion:
+  Which one worked better
