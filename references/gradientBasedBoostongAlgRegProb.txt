@@ -1,0 +1,1 @@
+Describes Adaboos a bit, and the mechanisms of boosting in general and for classifications as well as regressino. Has a new algortithm, need to check
