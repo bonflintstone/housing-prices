@@ -8,7 +8,6 @@ The Data:
 Workflow
   Training Set + Test Set
     from the kaggle competition
-    https://www.kaggle.com/c/house-prices-advanced-regression-techniques
   Had some numerical but also a few categorical values
 
   How much data do we have available?
@@ -25,7 +24,7 @@ Workflow
     |Work on the missing values, then distinquish again
     |
     |Had a lot of missing values
-    |  dropped columns with 30% or more missing values,
+    |  dropped columns with 50% or more missing values,
     |  Because we dont want to add things that dont represent reality
     |    Remove Columns, not rows!
     |
@@ -34,6 +33,8 @@ Workflow
     |Look at outlier
     |  Remove everything beyond 0.05 percentile and 0.95 percentile,
     |    for all columns
+
+
     |
     |Sales data is not normally distributed, so we took the logarithm
     |  [add some sources, why does this work?]

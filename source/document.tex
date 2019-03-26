@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{cite}
 
 \title{Comparing Lasso Regression and Graient Boosting Regressor on Stock Price estimation}
 \date{2019-3-21}
@@ -15,12 +16,12 @@ In this paper we show extensively how to deal with the data and compare lasso re
 \end{abstract}
 
 \section{Introduction}
+We used two approaches of linear regression on the same dataset for housing prices in 
  - Say a lot about housing prices, the features etc.
  - Why is it relevant?
  - What is regression? What kinda approaches are there?
 
-Regression is a statistical machine learning approach 
-- estimate relationships between variables; trying to predict dependent variable based on other independent variables
+Regression is a statistical machine learning approach that can be used to estimate relationships between variables; trying to predict dependent variable based on other independent variables. The most common loss function is the squared error loss funciton, but there are many different approaches and modifictions of the core linear regression idea.
 
  - What approaches did we choose and why?
 
@@ -38,19 +39,38 @@ Regression is a statistical machine learning approach
 Notebook server for Collaboration
 Pythong with the sklearn package (right?) and pandas
 \subsection{Dataset} 
-\subsection{Sample Treatment}
+Our dataset comes from the Kaggle comepetition "House prices adanced regression techniques \cite{kaggle}
+All in all it 
+
+- 50\% of the data was randomly chosen and held back as a test dataset
+\subsection{Data Origin}
+The Dataset used here is the Ames Dataset \cite{cock_2011}, which consists of 2950 observations 
 \subsection{Data Preprocessing}
-\subsection{Outlier}
+We are using a raw dataset, that means that we first have to deal with outliers etc.. Both the training and test dataset were treated together in the following ways:
+Missing Data:\newline
+Two different approaches were used to deal with missing data in our dataset. To understand what was needed, first we analysed how much data was missing on a per-feature-basis. Some features showed a huge amount of missing data, while others had fewer rows with missing entries.
+[insert missing data graphics here]
+Features were split into two categories based on the percentage of missing data, with the split set at 50\%. Features that had more than 50\% of entries missing were removed from the dataset, while we used replacement by the mean or media for the missing entries in the remaining features.\newline
+Distribution:\newline
+\subsection{Outliers}
+Outliers are datapoints that are very different from the rest of the data. Formally defined one would usually assume a distribution (e.g. the normal distribution) on a given datarow and assume everything below and above a certain percentile an outlier.
+ We chose to discard outliers, because they do not provide much vlaue for the linear regression approaches that were used to analyze the data later. Thus we removed all rows which had features below the 5 percentile or above the 90 percentile.\newline
 \section{Result and Discussion}
 \subsection{Data Preprocessing}
 A whole lotta charts, discussing step by step what we did and why
 \subsection{Lasso Regression}
 A whole lotta charts, discussing step by step what we did and why
+
+We used the root mean square error as the loss function for lasso regression.
 \subsection{Gradient Boosting Regressor}
 A whole lotta charts, discussing step by step what we did and why
+
+We also used the root mean square error as the loss function for the gradient boosting regressor.
 \subsection{Comparison}
+
 \subsection{Further Research}
 \subsection{Conclusion}
 
-\section{References}
+\bibliography{bibliography}{}
+\bibliographystyle{plain}
 \end{document}
