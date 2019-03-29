@@ -7,12 +7,4 @@ The first one is lasso regression, which works like linear regression but adds o
 The second machine learning algorithm we used is the gradient boosting regressor. Gradient boosting works by assembling a number of weak learners step by step to create one strong learner\cite{mason_2002}.\newline
 
 The dataset we are using is the Amex housing prices dataset, consisting of real propery sales prices with many different features for each property. Housing prices have already previously been used as one of the most common ways to test regression methods, as they tend to have a great availability of data, many different features - both categorical and numerical - and are based on real data.\newline
-
-The approach used in this report starts by analyzing the dataset, removing outliers and processing missing data
-
-- How did we do it?
-- What is our data? How much do we have?
-- Test set split
-- Validation Methods
-- How did we test the methods?
-- What result did we arrive at (Should that already be here?)
+The approach used in this report starts by analyzing the dataset, removing outliers and processing missing data. Then the dataset is randomly split into a test and training dataset. The test dataset was not looked at anymore until the final evaluation of our learners. Then the same training set was used to train a lasso regressor and a gradient boosting regressor. After hyperparameter tuning was comleted using cross validation, which randomly re-splits the training dataset into a validation dataset and the remaining training dataset multiple times to evaluate different hyperparameters, the learners were finished. At this point we used the test dataset to evaluate the performance of our learners and compare the bias and variance.
