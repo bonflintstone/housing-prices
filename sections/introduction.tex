@@ -1,14 +1,15 @@
-We used two approaches of linear regression on the same dataset for housing prices in 
+\section{Introduction}
+The aim of our paper is to compare two commong variations of the linear regression machine learning algorithm. Linear Regression is one of the most basic machine learning algorithms, and it works by gradually learning linear relationships between the input features and the output. Even though this is a basic algorithm, it has time and again been proven to be one of the most powerful and builds a baseline for many variations and other approaches.
+Regression is a statistical machine learning approach that can be used to estimate relationships between variables; trying to predict dependent variable based on other independent variables. The most common loss function is the squared error loss funciton, but there are many different approaches and modifictions of the core linear regression idea.
+In this paper two common machine learning algorithms are considered.
+The first one is lasso regression, which works like linear regression but adds one term to the loss function. This term is equivalent to the sum of the absolute values of the weights. Adding the weight of the features to the loss function is a common way to make the algorithm "prefer" solutions which smaller weights; in other words it is more likely to converge to a simpler solution. Lasso regression, as opposed to <TODO: OTHER SIMILAR REGRESSION METHOD HERE> applies the absolute value of the weights instead of the square, this makes it more likely to drop the weights of uncorrelated features completely to zero, and thus removes those terms from the regression equation.
+The second machine learning algorithm we used is the gradient boosting regressor.
+<TODO: STILL DONT KNOW MUCH ABOUT THIS>
+
+The dataset we are using is the Amex housing prices dataset, consisting of real propery sales prices with many different features for each property. This 
+
  - Say a lot about housing prices, the features etc.
  - Why is it relevant?
- - What is regression? What kinda approaches are there?
-
-Regression is a statistical machine learning approach that can be used to estimate relationships between variables; trying to predict dependent variable based on other independent variables. The most common loss function is the squared error loss funciton, but there are many different approaches and modifictions of the core linear regression idea.
-
- - What approaches did we choose and why?
-
-   - Tell a lot about lasso regression, how it works, upsides, downsides
-   - Tell a lot about gradient boosting regressor, how it works, upsides, downsides
 
  - How did we do it?
  - What is our data? How much do we have?

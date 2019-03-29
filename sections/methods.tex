@@ -1,6 +1,6 @@
+\section{Methods}
 \subsection{Technologies Used}
-Notebook server for Collaboration
-Pythong with the sklearn package (right?) and pandas
+For collaboration on this project we decided to use a centrally hosted IPython Jupyter Notebook server, this enabled us to use the power and availability of a provisioned server while all being able to collaborate in real time. The programming language we used was python 3 with the common data processing and machine learning packages such as sklearn and pandas.
 \subsection{Dataset} 
 Our dataset comes from the Kaggle comepetition "House prices adanced regression techniques \cite{kaggle}
 All in all it 
@@ -17,7 +17,7 @@ Non of the data have been changed, the only changes have been the removal of som
 We are using a real dataset, that means that we first have to deal with outliers and missing data. Both the training and test dataset were treated together in the following ways:
 Missing Data:\newline
 Two different approaches were used to deal with missing data in our dataset. To understand what was needed, first we analysed how much data was missing on a per-feature-basis. Some features showed a huge amount of missing data, while others had fewer rows with missing entries.
-[insert missing data graphics here]
+
 Features were split into two categories based on the percentage of missing data, with the split set at 50\%. Features that had more than 50\% of entries missing were removed from the dataset, while we used replacement by the mean or media for the missing entries in the remaining features.\newline
 Distribution:\newline
 \subsection{Outliers}
