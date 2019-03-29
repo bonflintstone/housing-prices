@@ -6,6 +6,11 @@ Dean~De Cock.
   semester regression project.
 \newblock {\em Journal of Statistics Education}, 19(3), 2011.
 
+\bibitem{mason_2002}
+Llew Mason, Jonathan Baxter, Peter Bartlett, and Marcus Frean.
+\newblock Boosting algorithms as gradient descent.
+\newblock {\em Adv Neural Inf Process Syst}, 12, 06 2002.
+
 \bibitem{tibshirani_1996}
 Robert Tibshirani.
 \newblock Regression shrinkage and selection via the lasso.
