@@ -6,6 +6,12 @@ Dean~De Cock.
   semester regression project.
 \newblock {\em Journal of Statistics Education}, 19(3), 2011.
 
+\bibitem{tibshirani_1996}
+Robert Tibshirani.
+\newblock Regression shrinkage and selection via the lasso.
+\newblock {\em Journal of the Royal Statistical Society: Series B
+  (Methodological)}, 58(1):267–288, 1996.
+
 \bibitem{kaggle}
 www.kaggle.com.
 \newblock Kaggle: House prices: Advanced regression techniques, 2018.

@@ -1,12 +1,7 @@
 \section{Methods}
 \subsection{Technologies Used}
-For collaboration on this project we decided to use a centrally hosted IPython Jupyter Notebook server, this enabled us to use the power and availability of a provisioned server while all being able to collaborate in real time. The programming language we used was python 3 with the common data processing and machine learning packages such as sklearn and pandas.
-\subsection{Dataset} 
-Our dataset comes from the Kaggle comepetition "House prices adanced regression techniques \cite{kaggle}
-All in all it 
-
-- 50\% of the data was randomly chosen and held back as a test dataset
-\subsection{Data Origin}
+For collaboration on this project we decided to use a centrally hosted IPython Jupyter Notebook server, this enabled us to use the power and availability of a provisioned server while all being able to collaborate in real time. The programming language we used was python 3 with the common data processing and machine learning packages such as sklearn, numpy and pandas.
+\subsection{Dataset}
 The Dataset used here is the Ames Dataset \cite{cock_2011} which is based of housing sales from between 2006 and 2010 in Ames, Iowa.
 It is based on a real dataset from the municipality in Ames, but has been cleaned up to make it more suitable for the task of linear regression.
 This cleanup consistent of a filtering to only include residential properties and removal of all previous sales of a property that has been sold multiple times.
@@ -27,19 +22,20 @@ Two different approaches were used to deal with missing data in our dataset. To 
 
 Features were split into two categories based on the percentage of missing data, with the split set at 50\%. Features that had more than 50\% of entries missing were removed from the dataset, while we used replacement by the mean or media for the missing entries in the remaining features.\newline
 Distribution:\newline
-The target value is the sales price. For linear regression with the sum of squared errors loss function, we are essentially assume the target to be normally distributed. To control our data for normality, we plotted it as a density curve together with the normal distribution\ref{dist}.
+The target value is the sales price. For linear regression with the sum of squared errors loss function, we are essentially assume the target to be normally distributed. By looking at the distribution of the price data\ref{dist-1} we can see that it is not normally distributed. To make up for this the logarithm of the price was taken, which left us with a distribution which comes very close to the normal distribution\ref{dist-2}.
 
 \begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{images/price_distribution.png}
+    \label{fig:dist-1}
     \caption{Distribution of price}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{images/price_normalize_distribution.png}
+    \label{fig:dist-2}
     \caption{After normalization}
   \end{subfigure}
-  \label{fig:dist}
 \end{figure}
 
 \subsection{Outliers}

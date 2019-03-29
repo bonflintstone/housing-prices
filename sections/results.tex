@@ -2,7 +2,9 @@
 \subsection{Data Preprocessing}
 A whole lotta charts, discussing step by step what we did and why
 \subsection{Lasso Regression}
-A whole lotta charts, discussing step by step what we did and why
+Lasso regression is a technique used in machine learning to analyze regression methods, which allows both variable selection whilst performing regularisation which increases the accuracy and reduces overfitting\cite{tibshirani_1996}. Lasso regression is a combination of regression with the l1 normalization, equivalent to minimising the sum of the weights.  Due to the advancements in computing power lasso regression has become more relevant and variations have been made. One such is the LARS algorithm which yields an efficient way to solve lasso regression whilst also connecting lasso regression to forward stagewise regression. Another variation is nearly isotonic regression, where isotonic regression given a data set will find to minimise the sum of their differences squared. The problem with this is that it assumes a monotone series. To fix this, nearly isotonic regression assumes a nearly monotone sequence which is half L1 penalty on differences. This allows us to compare nearly monotone assumptions where the best can be used to solve isotonic regression.\newline
+To compare 
+
 
 We used the root mean square error as the loss function for lasso regression.
 \subsection{Gradient Boosting Regressor}
